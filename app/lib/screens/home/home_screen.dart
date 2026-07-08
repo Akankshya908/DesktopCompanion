@@ -41,12 +41,14 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const CompanionCard(
-                title: 'Pixel Companion',
-                message:
-                    'You are doing great. Keep your hydration streak alive today.',
-                badge: 'Hydration',
-              ),
+             const CompanionCard(
+  name: 'Aqua',
+  mood: 'Time to drink some water!',
+  placeholderChild: Image(
+    image: AssetImage('assets/sprites/companion.png'),
+    fit: BoxFit.contain,
+  ),
+),
               const SizedBox(height: 20),
               WaterProgressCard(
                 currentGlasses: _glassesDrunk,
