@@ -23,7 +23,7 @@ class CompanionCard extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(24),
       ),
-      color: backgroundColor ?? theme.colorScheme.secondaryContainer.withOpacity(0.55),
+      color: backgroundColor ?? theme.colorScheme.secondaryContainer..withValues(alpha: 0.55),
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: LayoutBuilder(
@@ -41,7 +41,7 @@ class CompanionCard extends StatelessWidget {
                   height: placeholderHeight,
                   child: Container(
                     decoration: BoxDecoration(
-                      color: theme.colorScheme.surface.withOpacity(0.8),
+                      color: theme.colorScheme.surface..withValues(alpha: 0.8),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Center(
